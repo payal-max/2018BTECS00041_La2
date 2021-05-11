@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login</title>
+  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important; }
+  .text-sm-right {
+    text-align: right !important; }
+  .text-sm-center {
+    text-align: center !important; } }
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important; }
+  .text-md-right {
+    text-align: right !important; }
+  .text-md-center {
+    text-align: center !important; } }
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important; }
+  .text-lg-right {
+    text-align: right !important; }
+  .text-lg-center {
+    text-align: center !important; } }
+
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important; }
+  .text-xl-right {
+    text-align: right !important; }
+  .text-xl-center {
+    text-align: center !important; } }
+
+.text-lowercase {
+  text-transform: lowercase !important; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-capitalize {
+  text-transform: capitalize !important; }
+
+.font-weight-light {
+  font-weight: 300 !important; }
+
+.font-weight-lighter {
+  font-weight: lighter !important; }
+
+.font-weight-normal {
+  font-weight: 400 !important; }
+
+.font-weight-bold {
+  font-weight: 700 !important; }
+
+.font-weight-bolder {
+  font-weight: bolder !important; }
+
+.font-italic {
+  font-style: italic !important; }
+
+.text-white {
+  color: #fff !important; }
+
+.text-primary {
+  color: #007bff !important; }
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #0056b3 !important; }
+
+.text-secondary {
+  color: #6c757d !important; }
+
+a.text-secondary:hover, a.text-secondary:focus {
+  color: #494f54 !important; }
+
+.text-success {
+  color: #28a745 !important; }
+
+a.text-success:hover, a.text-success:focus {
+  color: #19692c !important; }
+
+.text-info {
+  color: #17a2b8 !important; }
+
+a.text-info:hover, a.text-info:focus {
+  color: #0f6674 !important; }
+
+.text-warning {
+  color: #ffc107 !important; }
+
+a.text-warning:hover, a.text-warning:focus {
+  color: #ba8b00 !important; }
+
+.text-danger {
+  color: #dc3545 !important; }
+
+a.text-danger:hover, a.text-danger:focus {
+  color: #a71d2a !important; }
+
+.text-light {
+  color: #f8f9fa !important; }
+
+a.text-light:hover, a.text-light:focus {
+  color: #cbd3da !important; }
+
+.text-dark {
+  color: #343a40 !important; }
+
+a.text-dark:hover, a.text-dark:focus {
+  color: #121416 !important; }
+
+.text-body {
+  color: #212529 !important; }
+
+.text-muted {
+  color: #6c757d !important; }
+
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5) !important; }
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important; }
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+.text-decoration-none {
+  text-decoration: none !important; }
+
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important; }
+
+.text-reset {
+  color: inherit !important; }
+
+.visible {
+  visibility: visible !important; }
+
+.invisible {
+  visibility: hidden !important; }
+  
+  body {
+  	background-color: #FADBD8;
+    min-width: 992px !important; }
+  .container {
+    min-width: 992px !important; }
+  .navbar {
+    display: none; }
+  .badge {
+    border: 1px solid #000; }
+  .table {
+    border-collapse: collapse !important; }
+    .table td,
+    .table th {
+      background-color: #fff !important; }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6 !important; }
+  .table-dark {
+    color: inherit; }
+    .table-dark th,
+    .table-dark td,
+    .table-dark thead th,
+    .table-dark tbody + tbody {
+      border-color: #dee2e6; }
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #dee2e6; } }
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: normal;
+  background: #fbd1b7;
+  color: gray; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  color: #b689b0; }
+  a:hover, a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #b689b0; }
+
+
+.login-wrap {
+  position: relative;
+  background: #000232;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); }
+  .login-wrap h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .login-wrap p {
+    color: rgba(255, 255, 255, 0.5); }
+  .login-wrap .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+.form-group {
+  position: relative; }
+  .form-group .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 48px;
+    background: transparent;
+    font-size: 18px; }
+    .form-group .icon span {
+      color: #fff; }
+
+.form-control {
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 14px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #b689b0;
+  padding-left: 30px;
+  padding-right: 0;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .form-control {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none; } }
+  .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.8) !important; }
+  .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.8) !important; }
+  .form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.8) !important; }
+  .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.8) !important; }
+  .form-control:focus, .form-control:active {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.07);
+    border-color: #b689b0; }
+
+.text a {
+  text-transform: uppercase; }
+
+.checkbox-wrap {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+
+
+.btn {
+  cursor: pointer;
+  border-radius: 40px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px; }
+  .btn:hover, .btn:active, .btn:focus {
+    outline: none; }
+  .btn.btn-primary {
+    background: #b689b0 !important;
+    border: 1px solid #b689b0 !important;
+    color: #fff !important; }
+    .btn.btn-primary:hover {
+      border: 1px solid #b689b0;
+      background: transparent;
+      color: #b689b0; }
+    .btn.btn-primary.btn-outline-primary {
+      border: 1px solid #b689b0;
+      background: transparent;
+      color: #b689b0; }
+      .btn.btn-primary.btn-outline-primary:hover {
+        border: 1px solid transparent;
+        background: #b689b0;
+        color: #fff; }
+</style>
+	
+
+	</head>
+	<body><br><br>
+	<section  style="max-width: 500px;
+  margin: auto;"class="ftco-section">
+		<div  class="container">
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap py-5">
+		     <div><br>
+		      	<h3  class="text-center mb-0">Aadhar Registration Form</h3>
+		      	
+						<form action="http://127.0.0.1:3000/process_get" class="login-form" method=GET>
+		      		<div class="form-group">
+		      			<div style="margin-left: 100px;" class="icon d-flex align-items-center justify-content-center"><span " class="fa fa-user"></span></div>
+		      			<input style="margin-left: 100px;"  type="text" name="full_name" class="form-control" placeholder="Username" required>
+		      		</div>
+              <div class="form-group">
+                <div style="margin-left: 100px;" class="icon d-flex align-items-center justify-content-center"><span " class="fa fa-user"></span></div>
+                <input style="margin-left: 100px;"  type="date" name="Birthdate" class="form-control" placeholder="Birthdate" required>
+              </div>
+              <div class="form-group">
+                <div style="margin-left: 100px;" class="icon d-flex align-items-center justify-content-center"><span " class="fa fa-user"></span></div>
+                <input style="margin-left: 100px;"  type="text" name="City" class="form-control" placeholder="City" required>
+              </div>
+              <div class="form-group">
+	            	<div style="margin-left: 100px;" class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
+	              <input style="margin-left: 100px;" type="number" name="Pincode" class="form-control" placeholder="Pincode" required>
+	            </div>
+	            <div class="form-group d-md-flex">
+								
+	            </div>
+	            <br>
+	            	<input style="margin-left: 150px;" type="submit" value="Submit"><br><br>
+	            
+	          </form>
+	      </div>
+	          
+	        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</body>
+</html>
+
